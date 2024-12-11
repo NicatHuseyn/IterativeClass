@@ -101,8 +101,8 @@
 
    <ul>
       <li><strong>Current:</strong> iterative addımda, o anda hansı halda olduğunu ifadə edir. Soruce-nin hansı qaynağı gətirmək istədyimizi ifadə edir.</li>
-      <li><strong>-	MoveNext():</strong> iteration zamanı, bir sonrakı addımda hansı dəyərin gətiriləcəyini ifadə edir.</li>
-      <li><strong>-	Reset(): </strong>iteration-ı başa qaytardıqda nələr olacağını ifadə edir.</li>
+      <li><strong>MoveNext():</strong> iteration zamanı, bir sonrakı addımda hansı dəyərin gətiriləcəyini ifadə edir.</li>
+      <li><strong>Reset(): </strong>iteration-ı başa qaytardıqda nələr olacağını ifadə edir.</li>
     </ul>
 
    <p>
