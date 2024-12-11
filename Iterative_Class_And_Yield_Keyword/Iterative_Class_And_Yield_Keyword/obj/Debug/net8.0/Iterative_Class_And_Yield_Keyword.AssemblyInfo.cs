@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Iterative_Class_And_Yield_Keyword")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+81e178c75df5963fb52ef59392248e95c5ec93cd")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+67e5e4f9a9565123f1ca4fbefb6b1e933fa2f5a9")]
 [assembly: System.Reflection.AssemblyProductAttribute("Iterative_Class_And_Yield_Keyword")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Iterative_Class_And_Yield_Keyword")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
