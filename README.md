@@ -114,3 +114,63 @@ Bundan sonra gəlib aşağıdakı kimi yazdığımız custom iteration-ı istifa
    <div style="width: 100%; margin: 20px 0">
       <img src="https://github.com/user-attachments/assets/b774dcdf-e705-4b97-a81f-d6db73f68a21" alt="" style="width: 600px" />
   </div>
+
+
+## yield keyword
+
+<h1>yield keyword-ü</h1>
+
+   <p>
+      Bəzən bir metod və ya property-dən qısıtlı sayda datanı collection olaraq döndürmək və bunu birbaşa foreach döngüsündə iteration eləmək istəyə bilərik.
+    </p>
+
+   <div style="width: 100%; margin: 20px 0">
+      <img src="https://github.com/user-attachments/assets/2f8c525f-eece-4008-8fb1-8ed9be70afb2" alt="" style="width: 600px" />
+
+   </div>
+    <p>
+      Yuxarıdakı koda nəzər salsaq görərik ki, bu metodun içərisində 4, 5 dənə dəyəri birbaşa geri döndürə bilmək üçün bir List collection yaratmaq və geri döndürmək lazımdır. Bu da maliyyətli bir işdir. <br>
+Halbuki bu dəyərləri kod cəhətdən daha az maliyyətlə də yaradıb return etmək daha məntiqli olar. Məhz bu nöqtədə “yield” keyword-ü işin içərisində girəcək. Bunu da aşağıdakı kimi istifadə edərək foreach iteration-una göndərməyimizə imkan yaradacaq
+
+   </p>
+
+   <div style="width: 100%; margin: 20px 0">
+      <img src="https://github.com/user-attachments/assets/0ef4be4d-34bb-494b-9867-f7e33ae67c9f" alt="" style="width: 600px" />
+
+   </div>
+    <p>
+      yield keyword-ü, foreach döngüsünə subroutine davranışı göstərən bir keyword-dür. İstifadə olaraq geriyə İEnumerable tipində döndürən metodlarda collection elementlərini bir-bir döndürməyimizə imkan verən bir struktura sahibdir. Bu davranış sayəsində colletion yaratmaq ehtiyacı qalmayacağına görə yaddaş cəhətdən böyük bir təsiri olacaqdır. yield sayəsində foreach döngüsü içərisindəki iterativ addımların hər biri sırası ilə addım-addım baxılır və hər addımda bir sonrakı element sanki collection-daymış kimi əlvə edilərək döndürülür.
+    </p>
+
+   Yuxarıdakı kodu çalışdırdıqda aşağıdakı kimi bir nəticə alınacaqdır.
+
+   <div style="width: 100%; margin: 20px 0">
+      <img src="https://github.com/user-attachments/assets/640e5da1-d6f2-45db-8111-4977801ce709" alt="" style="width: 600px" />
+   </div>
+
+   <p>
+      Burada da görününr ki, yield keyword-ü sayəsində hər bir geri dönüş dəyərini sırası ilə foreach məntiqində geri döndürə bilirik. <br>
+Beləcə datalar yaddaşda bütöv dataset olaraq tutulmaq məcburiyyətində qalmır və sadəcə mövcud addımdakı element sırası gəlib işlənildiyi zaman yaddaşda tutulur.
+    </p>
+
+   <h3><strong>Bəs bu yield keyword-ü istifadə edildiyi metod foreach döngüsündə necə bir çalışma sərgiləyir?</strong></h3>
+    <p>
+      yield bir iteration zamanı istifadə edən metodun hər bir call-unda harada olduğunu xatırlayam və ordan davam edən bir davranışa sahib bir keyword-dür. <br>
+Compiler yield keyword-ünü gördüyü anda bu keyword-ün olduğu blokun bir iterativ struktur olduğunu başa düşür. Bu anlayışdan sonra foreach döngüsü içərisində əlaqəli dəyərləri yield ilə dönən metod çağırıldıqdan sonra ilk yiled return ifadəsi ilə döndürülən dəyəri return edəcək və metodun çalışması o nöqtədə kəsiləcəkdir.
+<br>
+<br>
+Başa düşəcəyimiz odur ki, yield keyword-ü C#-da geriyə bir İEnumerable obyekti döndürmənin asan və başa düşülən üsul olaraq syntactic sugar-dır. <br>
+Həmçinin istifadə etdiyimiz array və collection-lar iteration zamanı birbaşa dataları yükləyərkən, yiled isə addım-addım yükləyəcəyi üçün deffered execuation (ya da lazy execution) həyata keçirir.
+
+   </p>
+
+   <h3><strong>İndi isə yield keyword-ünün istifadə şəkillərinə baxaq.</strong></h3>
+
+   <ul>
+      <strong>yield keyword [value]</strong>
+      <li>yiled return ilə addım-addım iterativ davranışla dataları return edə bilərik.</li>
+    </ul>
+    <ul>
+      <strong>yield break</strong>
+      <li>yield break ifadəsi iteration sona çatdıqda foreach döngüsünə bildirə bilərik.</li>
+    </ul>
