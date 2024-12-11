@@ -75,8 +75,6 @@
    </div>
    <strong>Burada metod adı mütləq GetEnumerator() olmalıdır.</strong>
 
-
-      IEnumerable interface
    <h1>IEnumerable interface</h1>
 
    <p>
