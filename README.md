@@ -37,7 +37,7 @@
     </p>
 
    <hr>
-    <h1>Bir class-a necə iterational davranış qazandırılar?</h1>
+    <h1>Bir class-a necə iterative davranış qazandırılar?</h1>
 
    <p>
       Bir class-a iterative bir davranış qazandıra bilmək üçün o class-ın içərisində geriyə IEnumerator dönən və adı “GetEnumerator”olan bir metod olması gərəkir.
