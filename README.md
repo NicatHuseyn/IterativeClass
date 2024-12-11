@@ -76,7 +76,7 @@
    <strong>Burada metod adı mütləq GetEnumerator() olmalıdır.</strong>
 
 
-   ## IEnumerable interface
+      IEnumerable interface
    <h1>IEnumerable interface</h1>
 
    <p>
@@ -115,8 +115,6 @@ Bundan sonra gəlib aşağıdakı kimi yazdığımız custom iteration-ı istifa
       <img src="https://github.com/user-attachments/assets/b774dcdf-e705-4b97-a81f-d6db73f68a21" alt="" style="width: 600px" />
   </div>
 
-
-## yield keyword
 
 <h1>yield keyword-ü</h1>
 
